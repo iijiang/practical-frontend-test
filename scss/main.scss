@@ -1,9 +1,9 @@
 //import font
-@import url("https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@100;200;300;400;500;600;700;800&display=swap");
+// @import url("https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@100;200;300;400;500;600;700;800&display=swap");
 
 //font vars
-$font-family: "Zilla Slab";
-$font: 500 5rem $font-family;
+$font-family-base: Helvetica, Arial, "Open Sans", sans-serif;
+$font: 500 5rem $font-family-base;
 //breakpoints
 $desktop: 1024px;
 $big-font-breakpoint: $desktop * 1.25;
@@ -35,11 +35,13 @@ body {
 }
 
 a {
-  text-decoration: none;
   appearance: none;
   color: inherit;
-  font-weight: bold;
+  // font-weight: bold;
   text-decoration: underline;
+  &:hover {
+    color: #2470a0
+  }
 }
 
 //base button style
@@ -55,7 +57,6 @@ a {
   user-select: none;
   appearance: none;
   text-decoration: none;
-
   &:hover {
     background: white;
     color: black;
@@ -67,15 +68,15 @@ h1 {
   padding-bottom: 0.25em;
 }
 
-a {
-  text-decoration: none;
-  font-weight: 100;
-  color: #333;
-  &:hover {
-    text-deoration: none;
-    font-weight: 800;
-  }
-}
+// a {
+//   text-decoration: underline;
+//   font-weight: 100;
+//   color: #333;
+//   &:hover {
+//     text-deoration: none;
+//     font-weight: 800;
+//   }
+// }
 .wrapper {
   transition: all 0.2s;
 }
@@ -342,8 +343,8 @@ a {
   }
 
   .suppliers {
-    color: #2c2e32;
-    background: #666b7a;
+    color: #343741;
+    background: #f5f5f5;
     overflow: hidden;
     padding: 2rem;
 
