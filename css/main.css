@@ -10,7 +10,9 @@ body {
   letter-spacing: 3px;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   font: Helvetica, Arial, "Open Sans", sans-serif "Zilla Slab" !important;
 }
 
@@ -488,4 +490,11 @@ a:hover {
     float: none;
     margin-left: 0;
   }
+}
+
+.scroll-top {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  z-index: 99;
 }

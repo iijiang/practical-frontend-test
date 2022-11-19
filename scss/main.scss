@@ -25,7 +25,9 @@ body {
   letter-spacing: 3px;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   font: $font !important;
 }
 
@@ -318,7 +320,7 @@ a {
 }
 
 .off-canvas-menu-on {
-  width: $mobile-nav-width * 2 ;
+  width: $mobile-nav-width * 2;
 }
 
 .body-wrapper {
@@ -369,7 +371,7 @@ a {
 
       @media (max-width: $tablet) {
         display: block;
-        max-width:  100%;
+        max-width: 100%;
         .left,
         .right {
           padding: 0;
@@ -533,7 +535,7 @@ a {
 
     img {
       max-width: 100%;
-      margin-bottom: .25rem;
+      margin-bottom: 0.25rem;
     }
 
     .tag {
@@ -548,7 +550,7 @@ a {
 
     @media (max-width: $tablet) {
       max-width: 100%;
-      margin-bottom:  1rem;
+      margin-bottom: 1rem;
       float: none;
       margin-left: 0;
     }
@@ -556,4 +558,11 @@ a {
 
   margin: 1rem 0 2rem;
   overflow: hidden;
+}
+
+.scroll-top {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  z-index: 99;
 }

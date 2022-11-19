@@ -12,3 +12,10 @@ console.log("body", document.body.clientWidth);
     $(".mobile.menu").toggleClass( "menu-open" );
     $(".mobile.menu > i").toggleClass( "fa-bar fa-times");
   })
+
+  $(".scroll-top").click(function() {
+    $("html, body").animate({ 
+        scrollTop: 0 
+    }, "slow");
+    return false;
+});
