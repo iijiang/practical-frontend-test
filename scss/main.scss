@@ -49,10 +49,10 @@ h2 {
 a {
   appearance: none;
   color: inherit;
-  // font-weight: bold;
   text-decoration: underline;
   &:hover {
-    color: #2470a0
+    color: #2470a0;
+    text-decoration: underline !important;
   }
 }
 
@@ -539,6 +539,11 @@ a {
     .tag {
       font-size: 0.8rem;
       font-weight: 200;
+    }
+
+    &:hover {
+      transform: translateX(-1px);
+      box-shadow: 0 0 20px rgb(0 0 0 / 15%);
     }
 
     @media (max-width: $tablet) {
