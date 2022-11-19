@@ -33,7 +33,7 @@ h2 {
 a {
   appearance: none;
   color: inherit;
-  text-decoration: underline;
+  text-decoration: underline !important;
 }
 a:hover {
   color: #2470a0;
@@ -475,6 +475,11 @@ a:hover {
   max-width: 100%;
   margin-bottom: 0.25rem;
 }
+@media (max-width: 768px) {
+  .cards .card img {
+    width: 100%;
+  }
+}
 .cards .card .tag {
   font-size: 0.8rem;
   font-weight: 200;
@@ -482,6 +487,9 @@ a:hover {
 .cards .card:hover {
   transform: translateX(-1px);
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+.cards .card:first-of-type {
+  margin-left: 0;
 }
 @media (max-width: 768px) {
   .cards .card {

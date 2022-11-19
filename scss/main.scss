@@ -51,7 +51,7 @@ h2 {
 a {
   appearance: none;
   color: inherit;
-  text-decoration: underline;
+  text-decoration: underline !important;
   &:hover {
     color: #2470a0;
     text-decoration: underline !important;
@@ -536,6 +536,9 @@ a {
     img {
       max-width: 100%;
       margin-bottom: 0.25rem;
+      @media (max-width: $tablet) {
+        width: 100%;
+      }
     }
 
     .tag {
@@ -548,6 +551,10 @@ a {
       box-shadow: 0 0 20px rgb(0 0 0 / 15%);
     }
 
+    &:first-of-type {
+      margin-left: 0;
+    }
+    
     @media (max-width: $tablet) {
       max-width: 100%;
       margin-bottom: 1rem;
