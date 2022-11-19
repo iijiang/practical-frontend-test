@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@100;200;300;400;500;600;700;800&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -5,8 +6,21 @@
 }
 
 body {
-  font: 500 5rem Helvetica, Arial, "Open Sans", sans-serif;
+  font: Helvetica, Arial, "Open Sans", sans-serif "Zilla Slab" !important;
   letter-spacing: 3px;
+}
+
+h1, h2, h3 {
+  font: Helvetica, Arial, "Open Sans", sans-serif "Zilla Slab" !important;
+}
+
+h1 {
+  margin-top: -0.2em;
+  padding-bottom: 0.25em;
+}
+
+h2 {
+  font-size: 1.5rem;
 }
 
 @media (min-width: 1280px) {
@@ -39,11 +53,6 @@ a:hover {
 .button:hover {
   background: white;
   color: black;
-}
-
-h1 {
-  margin-top: -0.2em;
-  padding-bottom: 0.25em;
 }
 
 .wrapper {
@@ -313,6 +322,7 @@ h1 {
 @media (max-width: 768px) {
   .body-wrapper .suppliers > div div {
     display: block;
+    max-width: 100%;
   }
   .body-wrapper .suppliers > div div .left,
   .body-wrapper .suppliers > div div .right {
@@ -351,13 +361,10 @@ h1 {
 .body-wrapper .contact > div .info {
   margin-top: 2em;
   padding-left: 0.5em;
-  flex-grow: 1;
   color: white;
-  text-align: center;
 }
 .body-wrapper .contact > div .info div {
   margin: 0.7em 0;
-  font-size: 1.5em;
   text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.75);
 }
 .body-wrapper .contact > div .info div i {
@@ -369,7 +376,7 @@ h1 {
 .body-wrapper .contact > div .form {
   padding-right: 0.5em;
   padding-bottom: 1em;
-  flex-grow: 1;
+  flex-grow: 2;
 }
 .body-wrapper .contact > div .form .msg {
   position: absolute;
@@ -390,7 +397,7 @@ h1 {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.75);
   color: white;
   resize: vertical;
-  font: 500 5rem Helvetica, Arial, "Open Sans", sans-serif;
+  font: Helvetica, Arial, "Open Sans", sans-serif "Zilla Slab";
   max-width: 900px;
   transition: all 0.2s;
   outline: none;
@@ -412,8 +419,9 @@ h1 {
   color: white;
 }
 .body-wrapper .contact > div .form .button {
-  text-align: left;
-  background: transparent;
+  max-width: 10rem;
+  float: left;
+  text-align: center;
 }
 @media (max-width: 768px) {
   .body-wrapper .contact > div {
@@ -446,7 +454,7 @@ h1 {
   overflow: hidden;
 }
 .cards .card {
-  max-width: 22%;
+  max-width: 30%;
   float: left;
   margin: 0 1.5%;
   padding: 1rem;
@@ -457,8 +465,17 @@ h1 {
 }
 .cards .card img {
   max-width: 100%;
+  margin-bottom: 0.25rem;
 }
 .cards .card .tag {
   font-size: 0.8rem;
   font-weight: 200;
+}
+@media (max-width: 768px) {
+  .cards .card {
+    max-width: 100%;
+    margin-bottom: 1rem;
+    float: none;
+    margin-left: 0;
+  }
 }
