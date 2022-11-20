@@ -170,13 +170,18 @@ a:hover {
 .header-wrapper .logo span:after {
   content: "";
   position: absolute;
-  top: 55%;
+  top: 70%;
   left: 50%;
   transform: translate(-50%, 0);
   height: 0.075em;
   width: 125%;
   background: black;
   z-index: -1;
+}
+@media (max-width: 768px) {
+  .header-wrapper .logo span:after {
+    background: none;
+  }
 }
 .header-wrapper .nav {
   z-index: 2;
